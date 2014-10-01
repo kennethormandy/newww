@@ -25,6 +25,12 @@ var routes = module.exports = [
   },
 
   {
+    path: '/install.sh',
+    method: 'GET',
+    handler: { file: './install.sh' }
+  },
+
+  {
     path: '/static/{path*}',
     method: 'GET',
     handler: {
